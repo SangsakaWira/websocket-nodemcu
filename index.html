@@ -1,0 +1,8 @@
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io.connect('http://192.168.0.13:3000');
+  socket.on('iot_push', function (data) {
+    console.log(data);
+    socket.emit('iot_push', "Yes");
+  });
+</script>
