@@ -2,7 +2,7 @@ var app = require('express')();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
-server.listen(3000,()=>{
+server.listen(6500,()=>{
     console.log("Server is running!")
 });
 // WARNING: app.listen(80) will NOT work here!
